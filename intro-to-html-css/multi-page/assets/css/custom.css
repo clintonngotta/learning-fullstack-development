@@ -1,0 +1,19 @@
+html,
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+#nav-wrapper ul {
+	display: flex;
+	gap: 16px;
+	list-style: none;
+}
+
+#nav-wrapper ul > li {
+	color: white;
+}
+
+#nav-wrapper ul > li:hover {
+	color: blue;
+}
