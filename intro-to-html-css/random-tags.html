@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<progress value="60" max="100">Installation process</progress>
+		<pre>
+            <code> funtion (){ alert("Document ready") } </code>
+        </pre>
+
+		<dialog>
+			<h2>Confirm Deletion</h2>
+			<button>Yes</button>
+			<button>No</button>
+		</dialog>
+
+		<label for="country">Choose Your Country</label>
+		<input list="select-countries" name="country" />
+		<datalist id="select-countries">
+			<option value="Kenya"></option>
+			<option value="Tanzania"></option>
+			<option value="Uganda"></option>
+			<option value="United States"></option>
+			<option value="United Kingdom"></option>
+			<option value="Algeria"></option>
+			<option value="Angola"></option>
+		</datalist>
+		<canvas id="canvas" height="200" width="400" style="border: 2px solid">
+			draw here
+		</canvas>
+	</body>
+</html>
+
+<script>
+	var canvas = document.getElementById("canvas");
+	var two_d_canvas = canvas.getContext("2d");
+	two_d_canvas.moveTo(0, 0);
+	two_d_canvas.lineTo(800, 400);
+	two_d_canvas.stroke();
+</script>

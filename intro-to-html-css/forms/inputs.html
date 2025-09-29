@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			label {
+				display: block;
+				font-weight: bold;
+				margin-block: 6px;
+			}
+			input,
+			select {
+				padding: 12px;
+				font-size: 16px;
+				display: block;
+				margin-block: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<label for="username">Username</label>
+			<input type="text" name="username" placeholder="username" />
+			<label for="password">Password</label>
+			<input type="password" name="password" placeholder="password" />
+			<label for="email"> Email </label>
+			<input type="email" name="email" />
+			<button type="submit">Login</button>
+
+			<label for="url"> url </label>
+			<input type="url" name="url" />
+			<label for="tel"> tel </label>
+			<input type="tel" name="tel" />
+			<label for="search"> search </label>
+			<input type="search" name="search" />
+			<label for="age"> age </label>
+			<input type="number" name="age" min="18" max="32" />
+
+			<label for="country">Country</label>
+			<select name="country">
+				<option>Select Country</option>
+				<option value="KE">Kenya</option>
+				<option value="TZ">Tanzania</option>
+				<option value="UG">Uganda</option>
+			</select>
+
+			<textarea placeholder="describe your issue in details" row="30" cols="30">
+			</textarea>
+
+			<label for="file"> file </label>
+			<input type="file" name="file" accept=".pptx" />
+
+
+			<h1>Hobbies</h1>
+			<label for="hobbies">swimming</label>
+			<input type="checkbox" name="hobbies" value="swimming">
+
+			<label for="hobbies">Watching Movies</label>
+			<input type="checkbox" name="hobbies" value="Watching Movies">
+
+			<label for="hobbies">Video Games</label>
+			<input type="checkbox" name="hobbies" value="Video Games">
+
+			<label for="hobbies">Running</label>
+			<input type="checkbox" name="hobbies" value="Running">
+
+
+			<h1>Gender</h1>
+			<label for="gender">Male</label>
+			<input type="radio" name="gender" value="Male">
+
+			<label for="gender">Female</label>
+			<input type="radio" name="gender" value="Female">
+
+		</form>
+	</body>
+</html>
