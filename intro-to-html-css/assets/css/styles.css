@@ -1,0 +1,26 @@
+ html, body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('../images/michael-dam_k-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    background-attachment:fixed;
+} 
+ 
+#id_selector{
+    color: blue !important;
+}
+
+.class_selector{
+    color:aquamarine ;
+}
+
+
+h3.class_selector{
+    color:rgb(56, 33, 2);
+    font-size:larger;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+ 
+}
