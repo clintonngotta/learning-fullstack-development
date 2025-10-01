@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS </title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+        p, h1, h3{
+            color: green;
+            /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); */
+        }
+        
+
+        div > p{
+            color: black
+        }
+        div p span, div span{
+            color:red;
+        }
+
+    p:hover{
+        font-weight: bold;
+        color: red;
+    }
+ p:before{
+        content: ".";
+        font-size: 40px;
+    }
+ p:after{
+        content: ".";
+        font-size: 40px;
+    }
+
+
+    
+   
+      
+    </style>
+    
+</head>
+<body>
+    <!-- inline style -->
+    <h1 style="color: red; text-transform: uppercase; letter-spacing: 0.1px;">Inline Styles</h1>
+
+    <!-- Styles -->
+     <p>This is using style</p>
+     <p id="id_selector">This is external styles with ID selector inside assets/css/styles.css</p>
+    <p class="class_selector">This is external styles with ID selector inside assets/css/styles.css</p>
+    <p>This  is a general paragraph that should be green</p>
+    <h3  class="class_selector" style="text-decoration: none;">class selector</h3>
+    <p id="id_selector" style="color: orange;">This  an id selector with inline styles</p>
+     <p>CSS Syntax: select: html tag, id, class, attritbute, ect</p>
+     <p>use curly brackest {}</p>
+     <p>every line of css ends with semi colon: "";"</p>
+
+     <div>
+        <p>paragraph <span>inside</span> div </p>
+     </div>
+     <div>
+       <span>inside</span>
+     </div>
+
+     <p>paragraph with styles on hover</p>
+
+
+     <div >
+        <div style="white-space: nowrap; overflow:scroll; text-overflow: ellipsis;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aspernatur dolorem quas repellat ab nihil veritatis fugiat optio, esse officia deserunt omnis tempore explicabo praesentium quam culpa repudiandae error aliquam!
+        Excepturi autem atque aliquam fuga, veniam corporis ex soluta optio nobis voluptatum corrupti, temporibus harum itaque aliquid perferendis ab sapiente eveniet maxime incidunt voluptates earum molestias rem explicabo. Molestiae, est.
+        Est culpa veritatis, nam at harum voluptate deserunt fuga voluptatum distinctio consequatur alias excepturi saepe aliquid odit reiciendis esse doloribus ratione. Cum labore totam veritatis perspiciatis excepturi similique harum obcaecati?
+        Laboriosam labore molestias molestiae eaque incidunt perspiciatis fugiat, odio quaerat ad, praesentium enim id eligendi illum, corporis quibusdam dolor impedit omnis blanditiis unde nemo! Nihil, fuga vitae? Eligendi, illo quibusdam.
+        Rem, autem? Praesentium, incidunt obcaecati possimus provident ab nisi dolorum delectus! Culpa vero odio deleniti itaque, vitae repudiandae sed nisi saepe omnis consequuntur error enim! Nesciunt recusandae veniam delectus velit.
+        Odio perferendis voluptatem eos numquam, dignissimos tenetur, recusandae quam nesciunt, consectetur possimus nisi? Est quo veniam vitae tempore sint, perspiciatis, debitis aperiam eos expedita id voluptas tempora sit numquam error.</div>
+     </div>
+
+
+
+     <img src="assets/images/michael-dam_k-unsplash.jpg" alt="" height="400" width="300" style="opacity: 0.5; border: 10px solid red">
+
+
+     <div style="background-color: aquamarine; color: red; width: 100px; margin-top: 16px; height: 100px; padding-left: 8px; padding-right: 8px;">
+        dive wiht background color
+     </div>
+</body>
+</html>
