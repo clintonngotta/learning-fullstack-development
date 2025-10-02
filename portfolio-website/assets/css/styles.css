@@ -1,0 +1,75 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #002;
+    color: #f0f0f0
+}
+main{
+    padding: 32px;
+}
+
+.about-me-wrap {
+    height: 500px;  
+        background-image: url("../images/hero-background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        padding: 16px;       
+}
+
+.about-me-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 40%;
+    padding: 32px;
+    
+}
+.about-me-inner p {
+    color: #d4d4d4;
+}
+hr{
+    color: #9e9d9d;
+    width: 100%;
+}
+.contacts_wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+button {
+    width: 150px;
+    padding: 12px 12px 10px 10px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #e6e3e3;
+    color: #1d1d1d;
+}
+
+
+.data_wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    margin-bottom: 16px;
+      padding: 32px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;    
+}
