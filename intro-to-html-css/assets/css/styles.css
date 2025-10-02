@@ -1,26 +1,54 @@
- html, body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url('../images/michael-dam_k-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto;
-    background-attachment:fixed;
-} 
- 
-#id_selector{
-    color: blue !important;
-}
+ html,
+ body,
+ * {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     /* background-image: url('../images/michael-dam_k-unsplash.jpg'); */
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: auto;
+     background-attachment: fixed;
+     box-sizing: content-box;
+ }
 
-.class_selector{
-    color:aquamarine ;
-}
+ #id_selector {
+     color: blue !important;
+ }
+
+ .class_selector {
+     color: aquamarine;
+ }
 
 
-h3.class_selector{
-    color:rgb(56, 33, 2);
-    font-size:larger;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: underline;
- 
-}
+ h3.class_selector {
+     color: rgb(56, 33, 2);
+     font-size: larger;
+     font-weight: bold;
+     text-transform: uppercase;
+     text-decoration: underline;
+
+ }
+
+ .grid {
+     display: grid;
+     grid-template-rows: auto auto;
+     grid-template-columns: 1fr 2fr 3fr;
+     gap: 20px;
+ }
+
+ @media screen and (max-width: 600px) {
+    .grid{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
+ }
+
+ @media screen and  (min-width: 600px) and (max-width: 992px)  {
+     .grid{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 2fr 2fr;
+        gap: 20px;
+    }
+ }
