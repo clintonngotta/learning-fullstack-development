@@ -38,6 +38,21 @@
             content: ".";
             font-size: 40px;
         }
+
+        .border-sizing {
+            width: 150px;
+            height: 80px;
+            padding: 20px;
+            background-color: antiquewhite;
+            margin: 10px;
+            border: 5px solid #000;
+            overflow-y: hidden;
+        }
+
+        .border-grid{                  
+            /* padding: 20px;           */
+            border: 5px solid #000;
+        }
     </style>
 
 </head>
@@ -97,6 +112,103 @@
     <div
         style="background-color: aquamarine; color: red; width: 100px; margin-top: 16px; height: 100px; padding-left: 8px; padding-right: 8px;">
         dive wiht background color
+    </div>
+
+
+
+
+    <h3>Layouts with Box Model</h3>
+    <div class="border-sizing" style="box-sizing: border-box;">
+        <h1>Div 1</h1>
+    </div>
+    <div class="border-sizing" style="box-sizing:content-box;">
+        <h1>Div 2</h1>
+    </div>
+
+
+    <h3>Diplay property</h3>
+    <div style="width: 150px; border: 2px solid #000;  display:inline;">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa quidem natus alias iure illo
+            maiores voluptas minima vel nesciunt voluptatem eos perspiciatis error dolorem, nemo expedita neque et
+            mollitia!</div>
+    </div>
+
+
+    <h3>Positioning</h3>
+    <div class="border-sizing" style="box-sizing:content-box;">
+        <h1>Static position</h1>
+    </div>
+    <div class="border-sizing" style="box-sizing:content-box; position: absolute;">
+        <h1>Absolute position</h1>
+    </div>
+    <div class="border-sizing" style="box-sizing:content-box; position: relative; top: 20px; left: 25px">
+        <h1>Relative position</h1>
+    </div>
+
+    <div class="border-sizing" style="box-sizing:content-box;">
+        <h1>Static position</h1>
+    </div>
+    <div class="border-sizing"
+        style="box-sizing:content-box; width: 100%; margin:0; padding:0; position: fixed; top: 0; right:0">
+        <h1>Static position</h1>
+    </div>
+
+
+    <div>
+        <img src="assets/images/michael-dam_k-unsplash.jpg" alt="" height="400" width="300" style="float: right;" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam nulla debitis cum voluptatum
+            dolorem sint, expedita error deserunt asperiores, doloremque voluptate corrupti! Laboriosam dolorum culpa
+            optio voluptas a nostrum.</p>
+    </div>
+
+
+    <div>Layouts with Flex</div>
+
+    <div style="display: flex; flex-direction:row-reverse; flex-wrap: wrap;">
+        <div class="border-sizing">
+            <h3>Static position 1</h3>
+        </div>
+        <div class="border-sizing" style="display: flex; justify-items: center; align-items:flex-start;">
+            <h3>Static position 2</h3>
+        </div>
+        <div class="border-sizing">
+            <h3>Static position 3</h3>
+        </div>  <div class="border-sizing">
+            <h3>Static position 4</h3>
+        </div> <div class="border-sizing">
+            <h3>Static position 5</h3>
+        </div>
+         <div class="border-sizing">
+            <h3>Static position 6</h3>
+        </div> <div class="border-sizing">
+            <h3>Static position 7</h3>
+        </div>
+    </div>
+
+
+
+
+    <div>Layouts with Grid</div>
+
+    <div class="grid">
+        <div class="border-grid">
+            <h3>Static position 1</h3>
+        </div>
+        <div class="border-grid" >
+            <h3>Static position 2 Static position 2Static position 2Static position 2Static position 2Static position 2Static position 2</h3>
+        </div>
+        <div class="border-grid">
+            <h3>Static position 3</h3>
+        </div>  <div class="border-grid">
+            <h3>Static position 4</h3>
+        </div> <div class="border-grid">
+            <h3>Static position 5</h3>
+        </div>
+         <div class="border-grid">
+            <h3>Static position 6</h3>
+        </div> <div class="border-grid">
+            <h3>Static position 7</h3>
+        </div>
     </div>
 </body>
 
